@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Disease Detection Theme */
+body.detect {
+  background: linear-gradient(135deg, #1e6f47, #0f4f34);
+}
+
+/* Treatment Guide Theme */
+body.treatment {
+  background: linear-gradient(135deg, #e76f51, #f4a261);
+}
+
+/* Plant Care Theme */
+body.care {
+  background: linear-gradient(135deg, #2a9d8f, #1e6f5c);
+}
+
+.login-container {
+  background: white;
+  border-radius: 28px;
+  width: 420px;
+  padding: 48px 40px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.back-link {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.back-link a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+body.detect .back-link a {
+  color: #1e6f47;
+}
+
+body.treatment .back-link a {
+  color: #e76f51;
+}
+
+body.care .back-link a {
+  color: #2a9d8f;
+}
+
+.logo-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+body.detect .logo-icon {
+  background: #e8f5e9;
+}
+
+body.treatment .logo-icon {
+  background: #fff3e8;
+}
+
+body.care .logo-icon {
+  background: #e0f2f0;
+}
+
+.logo-icon i {
+  font-size: 45px;
+}
+
+body.detect .logo-icon i {
+  color: #1e6f47;
+}
+
+body.treatment .logo-icon i {
+  color: #e76f51;
+}
+
+body.care .logo-icon i {
+  color: #2a9d8f;
+}
+
+h2 {
+  color: #1e3a2f;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: #6c7a6c;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2d3e2d;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8e2;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1e6f47;
+  box-shadow: 0 0 0 3px rgba(30, 111, 71, 0.1);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+body.detect .login-btn {
+  background: #1e6f47;
+}
+
+body.treatment .login-btn {
+  background: #e76f51;
+}
+
+body.care .login-btn {
+  background: #2a9d8f;
+}
+
+body.detect .login-btn:hover {
+  background: #0f4f34;
+  transform: translateY(-2px);
+}
+
+body.treatment .login-btn:hover {
+  background: #f4a261;
+  transform: translateY(-2px);
+}
+
+body.care .login-btn:hover {
+  background: #1e6f5c;
+  transform: translateY(-2px);
+}
+
+.demo-note {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #8a9a8a;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 35px 25px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .logo-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .logo-icon i {
+    font-size: 35px;
+  }
+}

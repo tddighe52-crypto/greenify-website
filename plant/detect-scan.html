@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenify - Scan Leaf</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="detect-scan.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <h2><i class="fas fa-microscope"></i> Disease Detection Module</h2>
+    </div>
+    <a href="logout.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+
+  <div class="nav-bar">
+    <div class="nav-links">
+      <a href="detect-dashboard.html">📊 Dashboard</a>
+      <a href="detect-scan.html" class="active">🔬 Scan Leaf</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-title">
+      <h1><i class="fas fa-camera"></i> Upload Leaf Image</h1>
+      <p>Take a clear photo of the affected leaf for accurate analysis</p>
+    </div>
+
+    <div class="upload-area">
+      <i class="fas fa-leaf"></i>
+      <h3>Upload Plant Leaf Image</h3>
+      <p>Supported formats: JPG, PNG, JPEG</p>
+      <div class="file-input">
+        <input type="file" accept="image/*">
+      </div>
+      <button class="analyze-btn"><i class="fas fa-chart-line"></i> Analyze Disease</button>
+      
+      <div class="result-box">
+        <h3><i class="fas fa-clipboard-list"></i> Analysis Result</h3>
+        <div class="result-item">
+          <strong>Disease Detected:</strong>
+          <span>Early Blight (Alternaria solani)</span>
+        </div>
+        <div class="result-item">
+          <strong>Confidence:</strong>
+          <span>94%</span>
+        </div>
+        <div class="result-item">
+          <strong>Severity:</strong>
+          <span>Moderate</span>
+        </div>
+        <div class="result-item">
+          <strong>Recommended Action:</strong>
+          <span>Apply copper-based fungicide</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
